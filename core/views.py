@@ -50,6 +50,10 @@ class LoginView(LoginView):
 class Logout(LogoutView):
     next_page = reverse_lazy('edit_page')
 
+def gallery(request):
+    return render(request, "photogallery.html")
+
+
 #def update_page(request, pk):
 #    get_record = Records.objects.get(pk=pk)
 #    if request.method == 'POST':

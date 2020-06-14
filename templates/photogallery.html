@@ -1,0 +1,73 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<html lang="ru">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Галерея АлтГУ</title>
+    <style>
+        .thumb img {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+        .thumb img:hover {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+
+        .thumb {
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1 class="h2 text-center">Галерея АлтГУ</h1>
+    <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a data-fancybox="gallery" href="https://www.mirf.ru/wp-content/uploads/2020/01/Deca-Dense.jpg">
+                <img class="img-fluid" src="https://www.mirf.ru/wp-content/uploads/2020/01/Deca-Dense.jpg" alt="">
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a data-fancybox="gallery" href="https://xbox-store-checker.com/assets/upload/game/2019/09/optimize/9wzdncrfjb03.png">
+                <img class="img-fluid" src="https://xbox-store-checker.com/assets/upload/game/2019/09/optimize/9wzdncrfjb03.png" alt="">
+            </a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+            <a data-fancybox="gallery" href="https://besthqwallpapers.com/Uploads/17-2-2018/41098/thumb2-zero-two-manga-anime-characters-pink-hair-darling-in-the-franxx.jpg">
+                <img class="img-fluid" src="https://besthqwallpapers.com/Uploads/17-2-2018/41098/thumb2-zero-two-manga-anime-characters-pink-hair-darling-in-the-franxx.jpg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+ <script>
+        $(document).ready(function(){
+            $('.fancybox-image').zoom();
+        });
+    </script>
+</body>
+</html>
+
+{% endblock %}

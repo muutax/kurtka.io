@@ -36,6 +36,10 @@
       {% url 'edit_page' as url_edit_page %}
     <a class="nav-link {% if url_edit_page == request.path %} active {% endif %}" href = "{{ url_edit_page }}">Создание/ред/удал</a>
   </li>
+  <li class="nav-item">
+      {% url 'gallery_page' as url_gallery_page %}
+    <a class="nav-link {% if url_gallery_page == request.path %} active {% endif %}" href = "{% url 'gallery' %}">Галерея</a>
+  </li>
 
         {% if request.user.is_authenticated %}
             <li class="nav-item">

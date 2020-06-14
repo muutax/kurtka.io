@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views
+from core.views import gallery
 
 urlpatterns = [
     #path('', views.home, name='home'),
@@ -27,4 +28,5 @@ urlpatterns = [
     path('delete-page/<int:pk>', views.RecordDeleteView.as_view(), name='delete_page'),
     path('login', views.LoginView.as_view(), name='login_page'),
     path('logout', views.Logout.as_view(), name='logout_page'),
+    path('gallery', gallery, name = 'gallery')
 ]
