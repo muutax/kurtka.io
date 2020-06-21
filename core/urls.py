@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from core import views
 from core.views import gallery
+from django.conf import settings
+from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     #path('', views.home, name='home'),
@@ -28,5 +31,8 @@ urlpatterns = [
     path('delete-page/<int:pk>', views.RecordDeleteView.as_view(), name='delete_page'),
     path('login', views.LoginView.as_view(), name='login_page'),
     path('logout', views.Logout.as_view(), name='logout_page'),
-    path('gallery', gallery, name = 'gallery')
+    path('gallery', gallery, name = 'gallery'),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 class Records(models.Model):
     create_date = models.DateTimeField(auto_now = True)
     second_name = models.CharField(max_length = 15, verbose_name = "Фамилия")
@@ -22,3 +20,8 @@ class Records(models.Model):
     class Meta:
         verbose_name = "запись"
         verbose_name_plural = "Записи"
+
+class Imagesz(models.Model):
+    image = models.ImageField('Изображение',  upload_to = "photos/")
+    class Meta:
+        verbose_name_plural = "Фотографии"

@@ -50,6 +50,10 @@ class LoginView(LoginView):
 class Logout(LogoutView):
     next_page = reverse_lazy('edit_page')
 
+class Photo(UpdateView):
+    fields = ['image']
+    template_name = 'photogallery.html'
+
 def gallery(request):
     return render(request, "photogallery.html")
 
