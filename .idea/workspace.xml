@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66499037-033f-4748-a197-97b48f205199" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/end/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/end/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/photogallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/photogallery.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +29,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/firstapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../muutax.github.io/muutax.github.io" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -104,7 +107,7 @@
       <workItem from="1592234259609" duration="13000" />
       <workItem from="1592585979860" duration="11826000" />
       <workItem from="1592738008690" duration="7302000" />
-      <workItem from="1592745579322" duration="3021000" />
+      <workItem from="1592745579322" duration="5573000" />
     </task>
     <servers />
   </component>

@@ -25,7 +25,7 @@ SECRET_KEY = 'bc!^y)=kp&m#kan*(34hoo%$3vm6+lx6*_y$s%u@fp^drp8j^@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kyrto4niy.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
